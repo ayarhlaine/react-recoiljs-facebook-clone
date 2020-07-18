@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 import {
-    useRecoilState
+    useRecoilState,
+    useSetRecoilState
 } from 'recoil';
 import postState from '../../../state';
 import './PostModal.scss';
@@ -25,7 +26,12 @@ const useStyles = makeStyles((theme) => ({
 export const PostModal = () => {
     const classes = useStyles();
     const [ postModalOpen, setPostModalOpen] = useRecoilState(postState.postModalOpenState);
+    const setShowPostSuccessMessageState = useSetRecoilState(postState.showPostSuccessMessageState);
     const handleClose = () => {
+        setPostModalOpen(false);
+    }
+    const onButtonClick = () => {
+        setShowPostSuccessMessageState(true);
         setPostModalOpen(false);
     }
     return(
@@ -40,9 +46,9 @@ export const PostModal = () => {
             <h3 className={'Create__Post__Text'}>Create Post</h3>
             <hr/>
             <div>
-                <textarea name="post_body" id="" cols="30" rows="10"></textarea>
+                <textarea className={'Post_Body'} name="post_body" id="" cols="30" rows="10"></textarea>
             </div>
-            <Button variant="contained" color="primary" className={'Post__Button'}>
+            <Button variant="contained" color="primary" className={'Post__Button'} onClick={onButtonClick}>
                 POST
             </Button>
         </div>

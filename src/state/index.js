@@ -18,9 +18,16 @@ export const postModalOpenState = atom({
     default: false,
 });
 
+// create post success message
+export const showPostSuccessMessageState = atom({
+    key: 'post/SHOW_POST_SUCCESS_MESSAGE', 
+    default: false,
+});
+
 const postState = {
     postListsState,
     postLoadingState,
-    postModalOpenState
+    postModalOpenState,
+    showPostSuccessMessageState
 };
 export default postState;
