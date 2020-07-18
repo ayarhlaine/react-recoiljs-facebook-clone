@@ -5,7 +5,7 @@ export const PostTable = ({ posts }) => {
     return(
             <div className={'Post__Table'}>
             {posts.map((row, index) => (
-                <Post title={row.title} body={row.body}/>
+                <Post title={row.title} body={row.body} key={index}/>
               ))}
           </div>
     )

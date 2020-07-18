@@ -15,7 +15,7 @@ function App() {
           setPostLoadingState(false);
           setPostLists(posts);
         });
-    },[setPostLists]);
+    },[setPostLists,setPostLoadingState]);
   return (
     <div className="App">
       <PostList/>

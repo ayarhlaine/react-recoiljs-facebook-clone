@@ -1,5 +1,6 @@
+const API = process.env.REACT_APP_API_URL;
 const getAllPosts = async () => {
-    return await fetch('https://jsonplaceholder.typicode.com/posts');
+    return await fetch(`${API}/posts`);
 }
 const apiService = {
     getAllPosts,
