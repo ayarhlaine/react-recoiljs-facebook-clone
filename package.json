@@ -1,7 +1,7 @@
 {
   "name": "react-recoiljs-crud",
   "version": "0.1.0",
-  "homepage": "https://devayarhlaine.github.io/react-recoiljs-crud",
+  "homepage": "https://ayarhlaine.github.io/react-recoiljs-crud",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
