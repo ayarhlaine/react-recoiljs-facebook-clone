@@ -1,6 +1,8 @@
 # react-recoiljs-crud
 React JS, Recoil State Management
 
+[![Build Status](https://travis-ci.com/ayarhlaine/react-recoiljs-facebook-clone.svg?branch=master)](https://travis-ci.com/ayarhlaine/react-recoiljs-facebook-clone)
+
 ## Demo Link
 https://ayarhlaine.github.io/react-recoiljs-facebook-clone
 

@@ -6,10 +6,10 @@ cache:
   - node_modules
 jobs:
   include:
-    - stage: "Testing"
+    - stage: "Unit Test"
       script: 
         - npm test
-    - stage: "Build & Deploy to Github Pages"
+    - stage: "Build & Deploy"
       before_deploy: npm run build
       deploy:
         provider: pages
