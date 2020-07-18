@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-recoiljs-facebook-clone/static/css/main.bd947e63.chunk.css",
+    "main.js": "/react-recoiljs-facebook-clone/static/js/main.4d15c229.chunk.js",
+    "main.js.map": "/react-recoiljs-facebook-clone/static/js/main.4d15c229.chunk.js.map",
+    "runtime-main.js": "/react-recoiljs-facebook-clone/static/js/runtime-main.60b092ab.js",
+    "runtime-main.js.map": "/react-recoiljs-facebook-clone/static/js/runtime-main.60b092ab.js.map",
+    "static/js/2.d4107cb9.chunk.js": "/react-recoiljs-facebook-clone/static/js/2.d4107cb9.chunk.js",
+    "static/js/2.d4107cb9.chunk.js.map": "/react-recoiljs-facebook-clone/static/js/2.d4107cb9.chunk.js.map",
+    "index.html": "/react-recoiljs-facebook-clone/index.html",
+    "precache-manifest.1170734f7395953094cab942cae82591.js": "/react-recoiljs-facebook-clone/precache-manifest.1170734f7395953094cab942cae82591.js",
+    "service-worker.js": "/react-recoiljs-facebook-clone/service-worker.js",
+    "static/css/main.bd947e63.chunk.css.map": "/react-recoiljs-facebook-clone/static/css/main.bd947e63.chunk.css.map",
+    "static/js/2.d4107cb9.chunk.js.LICENSE.txt": "/react-recoiljs-facebook-clone/static/js/2.d4107cb9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60b092ab.js",
+    "static/js/2.d4107cb9.chunk.js",
+    "static/css/main.bd947e63.chunk.css",
+    "static/js/main.4d15c229.chunk.js"
+  ]
+}
