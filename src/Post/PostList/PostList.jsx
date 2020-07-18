@@ -4,6 +4,7 @@ import PostTable from './PostTable';
 import LoadingPost from './LoadingPost';
 
 import CreatePost from '../CreatePost/CreatePost';
+import PostModal from '../CreatePost/PostModal/PostModal';
 import postState from '../../state';
 import './PostList.scss';
 export const PostList = () => {
@@ -17,6 +18,7 @@ export const PostList = () => {
                 <LoadingPost />:
                 <PostTable posts={postLists}/>
             }
+            <PostModal />
         </div>
     )
 };

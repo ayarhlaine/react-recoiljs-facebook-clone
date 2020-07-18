@@ -3,6 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
+import { 
+    useSetRecoilState
+} from 'recoil';
+import postState from '../../state';
 const useStyles = makeStyles({
     root: {
         marginBottom: 5,
@@ -14,12 +18,13 @@ const useStyles = makeStyles({
 
 export const CreatePost = () => {
     const classes = useStyles();
+    const setPostModalOpenState = useSetRecoilState(postState.postModalOpenState)
     return(
         <div>
             <Card className={classes.root}>
-                <CardActionArea>
+                <CardActionArea onClick={() => setPostModalOpenState(true)}>
                 <CardContent>
-                    What is on your mind?
+                   Hey! What is on your mind?
                 </CardContent>
                 </CardActionArea>
             </Card>

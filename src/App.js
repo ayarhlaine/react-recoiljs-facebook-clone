@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import { useSetRecoilState } from 'recoil';
+import Nav from './Nav/Nav';
 import PostList from './Post/PostList/PostList';
 import postState from './state';
 import apiService from './apiService';
@@ -18,6 +19,7 @@ function App() {
     },[setPostLists,setPostLoadingState]);
   return (
     <div className="App">
+      <Nav />
       <PostList/>
     </div>
   );
